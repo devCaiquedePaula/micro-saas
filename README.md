@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Micro-SaaS
 
-## Getting Started
+## Setup with Next.js 14, Shadcn UI, and Authentication with Next Auth
 
-First, run the development server:
+This project presents a robust configuration using Next.js 14, Shadcn UI, and Next Auth for authentication, offering a solid foundation for developing modern and secure applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Next.js in Both Frontend and Backend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Used in both frontend and backend for an organized application structure in two layers, promoting optimized performance for both the client and the developer.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Shadcn.UI
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Shadcn.UI**: A component library built with TailwindCSS, compatible with the new React API and Next.js 14 - Server Components.
+    - CLI to facilitate the installation of all components, providing an open and highly customizable design system.
 
-## Learn More
+### v0 - Automatic Component Generation
 
-To learn more about Next.js, take a look at the following resources:
+- **v0**: Utilization of Artificial Intelligence to automatically generate components, integrating React, Tailwind, and Shadcn.UI components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Micro-SaaS Authentication
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Complete authentication system for Micro-SaaS:
+    - User creation in the database.
+    - Sending authentication emails.
+    - Session control.
+    - Generation of JWT keys for secure authentication.
 
-## Deploy on Vercel
+### NextAuth.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **NextAuth.js**: Specialized authentication library for Next.js, with adapters for Prisma, facilitating integration and implementation of robust authentication.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Prisma
+
+- **Prisma**: Used as an ORM for SQLite database, employing a schema provided by NextAuth.js for efficient and secure data management.
